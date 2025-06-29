@@ -1,0 +1,39 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cyber King</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 id="header">Welcome, I'm <span id="name">Cyber King (Na Fatee)</span></h1>
+	<script src="script.js"></script>
+</body>
+</html>
+
+style.css
+body {
+	background-color: #2b2b2b;
+	font-family: Arial, sans-serif;
+	color: #ffffff;
+	text-align: center;
+}
+
+#header {
+	font-size: 36px;
+	margin-top: 100px;
+}
+
+#name {
+	color: #00ff00; 
+}
+
+script.js
+console.log("Hello, I'm Cyber King (Na Fatee)!");
+document.getElementById("name").addEventListener("mouseover", function() {
+	this.style.color = "#ff0000"; 
+});
+document.getElementById("name").addEventListener("mouseout", function() {
+	this.style.color = "#00ff00"; 
+});
+});
